@@ -76,7 +76,7 @@ slimsheddy-makeup/
 The booking form automatically generates a structured message and opens 
 WhatsApp with it pre-filled. No backend or email service needed.
 
-WhatsApp Number: **+234 813 475 8298**
+WhatsApp Number: 
 
 ---
 
@@ -94,11 +94,6 @@ WhatsApp Number: **+234 813 475 8298**
 
 ## 📞 Contact Details (in-site)
 
-- WhatsApp: +234 813 475 8298
-- Instagram: @slimsheddy_makeup_artistry
-- Location: Abeokuta, Ogun State, Nigeria
-
----
 
 Built with HTML, CSS, and Vanilla JavaScript. No frameworks. No dependencies 
 except Google Fonts and Font Awesome (loaded via CDN).
