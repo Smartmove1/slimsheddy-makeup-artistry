@@ -1,0 +1,427 @@
+/* ============================================
+   SLIMSHEDDY MAKEUP ARTISTRY — RESPONSIVE
+   ============================================ */
+
+/* ---- TABLET (max 1100px) ---- */
+@media (max-width: 1100px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+
+  .about-grid {
+    gap: 50px;
+  }
+
+  .booking-grid {
+    gap: 40px;
+  }
+}
+
+/* ---- TABLET (max 960px) ---- */
+@media (max-width: 960px) {
+  :root {
+    --nav-height: 70px;
+  }
+
+  .section-pad {
+    padding: 80px 0;
+  }
+
+  /* NAV */
+  .nav-links {
+    position: fixed;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    background: rgba(250, 246, 241, 0.98);
+    backdrop-filter: blur(16px);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 32px 36px;
+    gap: 20px;
+    box-shadow: 0 20px 40px rgba(74, 55, 40, 0.15);
+    transform: translateY(-20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+  }
+
+  .nav-links.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-link {
+    color: var(--text-dark);
+    font-size: 0.88rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .btn-nav {
+    display: none;
+  }
+
+  /* ABOUT */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .about-images {
+    height: 420px;
+  }
+
+  /* PORTFOLIO */
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio-item.wide {
+    grid-column: span 1;
+  }
+
+  /* STATS */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  /* REVIEWS */
+  .review-card {
+    flex: 0 0 calc(50% - 12px);
+  }
+
+  /* INSTAGRAM */
+  .insta-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* BOOKING */
+  .booking-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* CONTACT */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* VIDEO */
+  .video-grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  /* FOOTER */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* MODAL NAV */
+  .modal-prev { left: -48px; }
+  .modal-next { right: -48px; }
+}
+
+/* ---- MOBILE LARGE (max 768px) ---- */
+@media (max-width: 768px) {
+  .section-pad {
+    padding: 64px 0;
+  }
+
+  .container {
+    width: 92%;
+  }
+
+  /* HERO */
+  .hero-title {
+    font-size: clamp(2.2rem, 9vw, 3.2rem);
+  }
+
+  .hero-sub {
+    font-size: 0.92rem;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+    padding: 14px 28px;
+  }
+
+  /* ABOUT */
+  .about-images {
+    height: 360px;
+  }
+
+  .about-badge {
+    right: 0;
+  }
+
+  .why-us-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  /* SERVICES */
+  .services-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  /* PORTFOLIO */
+  .portfolio-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 200px;
+  }
+
+  .portfolio-item.tall {
+    grid-row: span 1;
+  }
+
+  .portfolio-filters {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    font-size: 0.7rem;
+    padding: 8px 16px;
+  }
+
+  /* STATS */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* REVIEWS */
+  .review-card {
+    flex: 0 0 100%;
+  }
+
+  /* INSTAGRAM */
+  .insta-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* BOOKING FORM */
+  .booking-form-card {
+    padding: 28px 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  /* FAQ */
+  .faq-question {
+    padding: 18px 20px;
+    font-size: 0.9rem;
+  }
+
+  .faq-answer p {
+    padding: 0 20px 18px;
+  }
+
+  /* CTA */
+  .cta-block {
+    padding: 44px 24px;
+  }
+
+  .cta-btns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* FOOTER */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  /* MODAL NAV */
+  .modal-prev,
+  .modal-next {
+    position: fixed;
+    top: auto;
+    bottom: 20px;
+    transform: none;
+  }
+
+  .modal-prev {
+    left: calc(50% - 55px);
+  }
+
+  .modal-next {
+    right: calc(50% - 55px);
+  }
+}
+
+/* ---- MOBILE (max 540px) ---- */
+@media (max-width: 540px) {
+  :root {
+    --nav-height: 64px;
+  }
+
+  .section-pad {
+    padding: 52px 0;
+  }
+
+  .section-title {
+    font-size: 1.9rem;
+  }
+
+  .hero-section {
+    min-height: 100svh;
+  }
+
+  .hero-content {
+    padding: 0 16px;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  /* ABOUT IMAGE STACK */
+  .about-images {
+    height: 300px;
+  }
+
+  .about-img-main {
+    width: 80%;
+    height: 85%;
+  }
+
+  .about-img-accent {
+    width: 55%;
+    height: 48%;
+  }
+
+  .about-badge {
+    padding: 14px 16px;
+  }
+
+  .badge-num {
+    font-size: 1.8rem;
+  }
+
+  /* PORTFOLIO SINGLE COLUMN */
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 240px;
+  }
+
+  .portfolio-item.wide,
+  .portfolio-item.tall {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  /* STATS */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .stat-num {
+    font-size: 2.4rem;
+  }
+
+  /* INSTAGRAM */
+  .insta-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* VIDEO */
+  .video-thumb {
+    height: 240px;
+  }
+
+  /* BOOKING */
+  .booking-section {
+    padding: 64px 0;
+  }
+
+  /* CONTACT */
+  .contact-grid {
+    max-width: 100%;
+  }
+
+  /* BACK TO TOP */
+  #back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+  }
+
+  /* LOADER */
+  .loader-script {
+    font-size: 2.8rem;
+  }
+}
+
+/* ---- TINY MOBILE (max 380px) ---- */
+@media (max-width: 380px) {
+  .container {
+    width: 94%;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-btns {
+    gap: 10px;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    max-width: 100%;
+    font-size: 0.76rem;
+    padding: 13px 22px;
+  }
+
+  .logo-script {
+    font-size: 1.6rem;
+  }
+
+  .review-card {
+    padding: 24px 20px;
+  }
+
+  .insta-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
